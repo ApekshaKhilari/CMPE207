@@ -1,0 +1,8 @@
+Step 1. Create a DynamoDB with a table name, "books" in our case
+
+Step 2. Create Lambda function for CRUD calls.
+
+Step 3. Create an AWS API Gateway for each of the CRUD calls, deploying each resource individually and linking accordingly to their respective created Lambda functions.
+Please note to allow Proxy integration for Lambda function in the case of POST,PUT and DELETE call.
+
+Step 4. The calls can be tested on a API testing platform such as Postman, make sure to pass the "id" in the request url in order to PUT/UPDATE or DELETE a particular entry.
